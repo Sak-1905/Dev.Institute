@@ -1,0 +1,30 @@
+p{
+    /* color:blue !important; */
+    color:blue;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.greenText{
+    color:green;
+}
+
+#purpleText{
+    color:purple;
+}
+
+h3,h4,h5{
+    color:orange;
+}
+
+div > p {
+    color:yellow
+}
+
+.catImage{
+    /* width: 500px; */
+    height: 250px;
+    margin-left: 50px;
+    border-radius: 20px;
+    /* visibility: hidden; */
+}

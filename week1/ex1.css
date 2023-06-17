@@ -1,0 +1,26 @@
+.test {
+    color: blue;
+    border: 5px dotted rgb(214, 214, 214);
+    width: 800px;
+    height: 100px;
+    padding-top: 65px;
+    padding-left: 10px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/* body{
+    background-image: url(https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg);
+} */
+
+/* li{
+    list-style-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/546/318/small/diamond_002.jpg) ;
+} */
+
+.exercise{
+    background-color: #C0F7D7;
+    border: 2px solid #27C76B;
+    padding: 30px;
+    display: inline-block;
+    width: 500px;   
+}
