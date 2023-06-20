@@ -1,6 +1,6 @@
 class AnagramChecker:
     def __init__(self, namelist):
-        self.word_list = self.load_word_list(namelist.txt)
+        self.word_list = self.load_word_list(namelist)
 
     def load_word_list(self, namelist):
         with open(namelist.txt, 'r') as file:

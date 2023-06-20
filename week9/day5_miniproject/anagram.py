@@ -1,8 +1,8 @@
 from anagram_checker import AnagramChecker
 
 class AnagramApp:
-    def __init__(self, namelist.txt):
-        self.anagram_checker = AnagramChecker(namelist.txt)
+    def __init__(self, namelist):
+        self.anagram_checker = AnagramChecker(namelist)
 
     def run(self):
         print("Welcome to the Anagram App!")

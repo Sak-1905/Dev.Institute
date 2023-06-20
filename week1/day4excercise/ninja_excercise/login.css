@@ -1,0 +1,64 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    color: #333;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+  
+  .fa-twitter:hover {
+    color: #00aced;
+  }
+  
+  .fa-instagram:hover {
+    color: #e4405f;
+  }
+  
