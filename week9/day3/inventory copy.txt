@@ -1,0 +1,6 @@
+apple,50.00
+chocolate,200.00
+banana,5.00
+pineapple,125.00
+Kiwi,30.00
+Kiwi,30.00

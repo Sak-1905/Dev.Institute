@@ -1,0 +1,93 @@
+/* @media screen and (min-width: 1000px) and (max-width: 4000px) {
+    body{
+        background-color: #ff4141;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+    body{
+        background-color: #fff;
+    }
+} */
+
+nav{
+    position: sticky;
+    top:10;
+    background-color: #171717;
+    height: 35px;
+    padding-top:14px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.buyButton{
+    width: 100px;
+    height: 35px;
+}
+
+.buyButton:hover{
+    background-color: #23ccff;
+    color: #fff;
+}
+
+
+nav > a{
+    color: #fff;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+body{
+    background-color: #f5f6ff;
+}
+
+
+.main{
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Allerta Stencil';
+}
+
+.catPic{
+    width: 250px;
+    border-radius: 12px;
+    float:left;
+    margin-right: 10px;
+}
+
+.innerPara {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+
+.cite{
+    border: 2px solid #23ccff;
+    background: #06053a;
+    width: 500px;
+    color:#fff;
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+
+
+table{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    border-collapse: collapse;
+
+}
+
+td{
+    border: 1px solid black;
+}
+th{
+    background-color: antiquewhite;
+}

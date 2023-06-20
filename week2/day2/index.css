@@ -1,0 +1,14 @@
+.footerText{
+    color:aliceblue;
+   
+}
+
+.footer{
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.strike{
+    text-decoration: line-through;
+}
