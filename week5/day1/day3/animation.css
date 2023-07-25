@@ -1,0 +1,48 @@
+body{
+    /* background-color: #171717; */
+    background-image: radial-gradient(closest-side at 50% 50%, rgb(88, 88, 88), rgb(23, 23, 23), rgb(0, 0, 0));;
+    width: 100%;
+    height: 100%;
+}
+
+.planet{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #555555;
+    margin: 4.6%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+   
+
+}
+
+.planet > p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet > .moon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a9a7a7;
+    border: 2px solid #cd7979;
+    top: 20 px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 3s ease-in;
+    -ms-transition: opacity 3s ease-in;
+    transition: opacity 3s ease-in;
+
+}
+
+.hidden{
+    display: none;
+}

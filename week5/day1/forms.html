@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        <input name="one" value="1">
+        <input name="two" value="2">
+    </form>  
+
+    <br><br>
+      
+    <form name="form2">
+        <input name="one" value="3">
+        <input name="two" value="4">
+    </form>  
+
+    <form id="form3" onsubmit="getvalue()"> 
+        <label>First name: </label><input type="text" name="fname" value="David"><br> 
+        <label>Last name: </label><input type="text" name="lname" value="BenGurion" required><br> 
+        <input type="submit" value="Submit"> 
+    </form> 
+
+
+    <form id="form4">
+       
+        <select id="A">
+            <option value="apple">Apple</option>
+            <option value="pear">Pear</option>
+            <option value="banana">Banana</option>
+          </select>
+
+          <label>
+            <input type="checkbox" name="age" value="young" > less than 18
+          </label>
+
+          <input type="submit" value="Submit">
+
+         
+    </form>
+
+</body>
+<script src="forms.js" defer></script>
+</html>
