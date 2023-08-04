@@ -1,0 +1,119 @@
+{{1]]A class serves as a blueprint for creating objects, and objects are instances of a class. When you create an object from a class, you are creating a specific instance that has its own unique set of values for the attributes defined in the class.
+
+Similarly, in Python or other OOP languages, a class defines attributes and methods that describe the properties and behavior of objects, but it doesn't represent a specific object. When you create an object from that class, you are instantiating the class, and the object becomes an instance of that class. Each instance of a class has its own unique set of attribute values and can perform actions defined by the methods of the class.
+
+{{2]]Encapsulation is one of the four fundamental principles of object-oriented programming (OOP). It is the concept of bundling data (attributes) and the methods (functions) that operate on that data within a single unit called a class. In other words, encapsulation refers to the idea of hiding the internal implementation details of an object and exposing only the necessary information through well-defined interfaces.
+
+The main purpose of encapsulation is to create a protective barrier around an object, allowing it to control its own data and behavior. By encapsulating the data, we can ensure that it is accessed and modified only through the defined methods of the class, known as accessors and mutators (or getters and setters). This provides better control over how the data is used and prevents direct manipulation by external code, reducing the chances of errors and bugs in the program.
+
+Encapsulation also allows us to change the internal implementation of a class without affecting other parts of the program that use the class. It provides a clear separation between the interface (the methods that can be accessed by other parts of the program) and the implementation (the internal details and data of the class).
+
+In summary, encapsulation helps in:
+
+Information hiding: It allows the internal details of an object to be hidden from the outside world, ensuring that only the necessary information is exposed.
+
+Data protection: It provides control over how data is accessed and modified, preventing unauthorized or unintended changes.
+
+Modularity: It enables modular design and development, as classes can be developed and used independently, promoting code reusability.
+
+Flexibility: It allows the internal implementation to be changed without affecting the external interface, making it easier to maintain and evolve the codebase.
+
+{{3]]Abstraction is one of the four fundamental principles of object-oriented programming (OOP). It is the process of simplifying complex systems by representing essential features while hiding unnecessary details. Abstraction allows us to model real-world entities in a simplified manner, focusing on their relevant characteristics and behaviors without getting into the specifics of their implementation.
+
+In OOP, abstraction is achieved through abstract classes and interfaces. An abstract class is a class that cannot be instantiated on its own but serves as a blueprint for other classes. It can define abstract methods, which are methods without any implementation. Subclasses that inherit from an abstract class must implement these abstract methods, providing the necessary details to make the class functional.
+
+Abstraction helps in managing the complexity of a system by breaking it down into smaller, more manageable components. It allows us to create a hierarchy of classes, where the parent abstract class represents a general concept, and the child classes represent specific implementations or variations of that concept.
+
+Benefits of abstraction include:
+
+1. Simplification: Abstraction provides a simplified view of complex systems, making it easier for developers to understand and work with the code.
+
+2. Modularity: It promotes modularity and reusability by allowing the creation of abstract classes that can be extended by multiple subclasses.
+
+3. Encapsulation: Abstraction works in conjunction with encapsulation to hide the internal implementation details and expose only the necessary interface.
+
+4. Flexibility: By providing a clear separation between the interface and implementation, abstraction allows for flexibility in adapting and extending the codebase.
+
+5. Maintenance: Abstraction makes the codebase more maintainable, as changes to the abstract class or interface are reflected in all its subclasses, ensuring consistency across the system.
+
+In summary, abstraction allows us to focus on what an object does rather than how it does it, providing a high-level view of the system's structure and promoting code reusability and maintainability.
+
+{{4]]Abstraction is one of the four fundamental principles of object-oriented programming (OOP). It is the process of simplifying complex systems by representing essential features while hiding unnecessary details. Abstraction allows us to model real-world entities in a simplified manner, focusing on their relevant characteristics and behaviors without getting into the specifics of their implementation.
+
+In OOP, abstraction is achieved through abstract classes and interfaces. An abstract class is a class that cannot be instantiated on its own but serves as a blueprint for other classes. It can define abstract methods, which are methods without any implementation. Subclasses that inherit from an abstract class must implement these abstract methods, providing the necessary details to make the class functional.
+
+Abstraction helps in managing the complexity of a system by breaking it down into smaller, more manageable components. It allows us to create a hierarchy of classes, where the parent abstract class represents a general concept, and the child classes represent specific implementations or variations of that concept.
+
+Benefits of abstraction include:
+
+1. Simplification: Abstraction provides a simplified view of complex systems, making it easier for developers to understand and work with the code.
+
+2. Modularity: It promotes modularity and reusability by allowing the creation of abstract classes that can be extended by multiple subclasses.
+
+3. Encapsulation: Abstraction works in conjunction with encapsulation to hide the internal implementation details and expose only the necessary interface.
+
+4. Flexibility: By providing a clear separation between the interface and implementation, abstraction allows for flexibility in adapting and extending the codebase.
+
+5. Maintenance: Abstraction makes the codebase more maintainable, as changes to the abstract class or interface are reflected in all its subclasses, ensuring consistency across the system.
+
+In summary, abstraction allows us to focus on what an object does rather than how it does it, providing a high-level view of the system's structure and promoting code reusability and maintainability.
+
+{{5]]Multiple inheritance is a feature in object-oriented programming (OOP) that allows a class to inherit attributes and methods from more than one superclass (base class). In multiple inheritance, a subclass can have multiple direct superclasses, each providing a different set of features and behaviors.
+
+In traditional single inheritance, a class can inherit from only one superclass. However, in multiple inheritance, a class can inherit from multiple superclasses. This means that the subclass will have access to the attributes and methods of all its superclasses.
+
+For example, consider the following classes:
+
+```python
+class A:
+    def method_A(self):
+        print("Method A")
+
+class B:
+    def method_B(self):
+        print("Method B")
+
+class C(A, B):
+    def method_C(self):
+        print("Method C")
+```
+
+In this example, class `C` is a subclass that inherits from both classes `A` and `B`. It can access and use the methods `method_A` and `method_B` from its superclasses, in addition to its own method `method_C`.
+
+Multiple inheritance can be a powerful tool, as it allows for code reuse and facilitates the creation of complex class hierarchies. However, it can also introduce challenges, such as the "diamond problem" (ambiguity that arises when multiple superclasses have a common superclass), which can be addressed using method resolution order (MRO).
+
+It is important to use multiple inheritance judiciously and carefully, as it can lead to increased complexity and potential conflicts between superclasses. Proper design and organization of classes are essential to ensure that multiple inheritance is used effectively and without introducing unnecessary complications in the code.
+
+{{6]]Polymorphism is one of the four fundamental principles of object-oriented programming (OOP). It refers to the ability of objects of different classes to be treated as objects of a common superclass. In other words, polymorphism allows different classes to be treated as if they were instances of a shared base class, even though they may have different implementations.
+
+There are two main types of polymorphism in OOP:
+
+1. Compile-time Polymorphism (Static Polymorphism):
+   - Method Overloading: In method overloading, multiple methods in the same class have the same name but different parameters. The correct method to be called is determined at compile time based on the number or type of arguments passed to the method.
+   - Operator Overloading: Operator overloading allows the same operator (e.g., +, -, *) to be used with different data types or classes, providing a custom implementation for that operator based on the operands.
+
+2. Runtime Polymorphism (Dynamic Polymorphism):
+   - Method Overriding: In method overriding, a subclass provides a specific implementation for a method that is already defined in its superclass. The method to be called is determined at runtime based on the actual type of the object.
+   - Interface Polymorphism: Interface polymorphism allows objects of different classes to be treated as objects of a common interface. A class can implement an interface, and objects of that class can be used wherever the interface type is expected.
+
+Polymorphism enables the development of flexible and extensible code. It allows for more generic and reusable code, as objects of different classes can be treated uniformly, provided they share a common interface or base class. This makes the code more adaptable to changes and simplifies code maintenance.
+
+Polymorphism is a powerful concept that encourages a modular and abstract design, enhancing the readability and maintainability of object-oriented programs. It plays a crucial role in OOP, along with encapsulation, inheritance, and abstraction, to create efficient and flexible software systems.
+
+{{7]]Method Resolution Order (MRO) is the process by which Python determines the order in which methods are inherited and searched for in a class hierarchy with multiple inheritance. When a class inherits from multiple superclasses (base classes), the MRO defines the sequence in which Python looks for and resolves method calls.
+
+In Python, the MRO is determined using the C3 Linearization algorithm, also known as the C3 superclass linearization algorithm. This algorithm ensures that the method lookup order maintains consistency and avoids ambiguities in cases where multiple inheritance is involved.
+
+The MRO is crucial for resolving method conflicts that can arise when a subclass inherits from multiple superclasses that have a common ancestor. This situation is known as the "diamond problem," and the MRO provides a way to resolve it by establishing a linear order of method resolution.
+
+Python uses the C3 Linearization algorithm to generate a linear sequence of classes in the class hierarchy based on three principles:
+
+1. Depth-First Search: Classes are explored in a depth-first manner, starting from the current class and its immediate superclass.
+
+2. Left-to-Right: When there are multiple inheritance paths, the algorithm gives priority to the left-most path. This means that methods in the left-most superclass are searched first.
+
+3. Preserve Order: The MRO ensures that the order in which classes appear in the inheritance declaration is preserved. Classes listed earlier have higher priority in the method resolution.
+
+The `super()` function in Python utilizes the MRO to call a method in the immediate superclass, allowing for a consistent and predictable method resolution in cases of multiple inheritance.
+
+Understanding the MRO is essential for developers working with multiple inheritance in Python. By following the MRO, they can design class hierarchies that avoid ambiguity and conflicts, ensuring proper method resolution in complex inheritance scenarios.

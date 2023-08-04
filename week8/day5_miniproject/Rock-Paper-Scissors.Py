@@ -106,7 +106,7 @@ def main():
 
         if choice == "new_game":
            
-            game = Game()
+            game = ()
           
             game_result = game.play()
            
@@ -158,7 +158,7 @@ def main():
 
         if choice == "new_game":
             
-            game = Game()
+            game = ()
            
             game_result = game.play()
             
