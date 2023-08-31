@@ -1,0 +1,11 @@
+<!-- browse_songs.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Songs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'musicapp/css/styles.css' %}">
+</head>
+<body>
+    <!-- ... -->
+</body>
+</html>
