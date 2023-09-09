@@ -40,3 +40,36 @@ document.addEventListener('DOMContentLoaded', () => {
             // Use data to display track information in your UI
         });
 });
+
+// static/js/scripts.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const playButton = document.querySelector('.play-button');
+    const pauseButton = document.querySelector('.pause-button');
+    const stopButton = document.querySelector('.stop-button');
+
+    playButton.addEventListener('click', () => {
+        const songId = /* Get the song ID */;
+        fetch(`/api/play/${songId}/`)
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response
+            });
+    });
+
+    pauseButton.addEventListener('click', () => {
+        fetch('/api/pause/')
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response
+            });
+    });
+
+    stopButton.addEventListener('click', () => {
+        fetch('/api/stop/')
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response
+            });
+    });
+});

@@ -29,3 +29,22 @@ class UserInteraction(models.Model):
     
     def __str__(self):
         return f"{self.user.username} - {self.song.title}"
+
+# musicapp/models.py
+
+from django.db import models
+from django.contrib.auth.models import User
+
+class Playlist(models.Model):
+    title = models.CharField(max_length=200)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+
+class PlaylistSong(models.Model):
+    playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.playlist.title} - {self.song.title}"
