@@ -53,7 +53,7 @@ class SongListCreateView(generics.ListCreateAPIView):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
 
-    from pydub import AudioSegment
+from pydub import AudioSegment
 from pydub.playback import play
 
 current_song = None  # To store the currently playing song
