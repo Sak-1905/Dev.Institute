@@ -5,11 +5,11 @@ from .models import Song
 
 def index(request):
     allSongs = Song.objects.all().order_by('-last_updated')
-    return render(request, template_name="music/index.html", context={"allSongs" : allSongs})
+    return render(request, template_name="index.html", context={"allSongs" : allSongs})
 
 
 def search_songs(request): 
-    template_path = 'music/search_result.html'
+    template_path = 'search_result.html'
     
     search_query = request.GET.get('search', None)
 
