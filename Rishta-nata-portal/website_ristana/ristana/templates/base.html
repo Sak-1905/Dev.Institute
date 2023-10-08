@@ -1,18 +1,26 @@
 <!-- templates/base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Other head elements -->
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Bootstrap JS (optional, for certain components) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-
+    
     <!-- Your custom styles or other CSS files -->
 </head>
-<!-- Rest of the base template -->
-<script src="{% static 'js/custom.js' %}"></script>
+<body>
+    <!-- Navigation or header content -->
+    
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <!-- Footer or other common content -->
+    <script src="{% static 'custom.js' %}"></script>
 </body>
 </html>
