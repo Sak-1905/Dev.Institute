@@ -3,16 +3,16 @@
 
 {% block content %}
   <body class="register-page" style="min-height: 540px;">
-  <div class="">
   <div class="card card-outline card-primary">
   <div class="card-header text-center">
-  <a href="../../signup.html" class="h1"><b>AHMADIYYA MUSLIM JAMA'AT</a>
+  <a href="#" class="h1"><b>AHMADIYYA MUSLIM JAMA'AT</a>
   </div>
   <div class="card-body">
   <p class="login-box-msg">User Registration</p>
-  <form action="../../index.html" method="post">
+  <form method="post" action="{% url 'signup' %}">
+  {% csrf_token %}
   <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Full name">
+  <input type="text" class="form-control" placeholder="Full name" name="name">
   <div class="input-group-append">
   <div class="input-group-text">
   <span class="fas fa-user"></span>
@@ -20,7 +20,7 @@
   </div>
   </div>
   <div class="input-group mb-3">
-  <input type="email" class="form-control" placeholder="Email">
+  <input type="email" class="form-control" placeholder="Email" name="email">
   <div class="input-group-append">
   <div class="input-group-text">
   <span class="fas fa-envelope"></span>
@@ -28,7 +28,7 @@
   </div>
   </div>
   <div class="input-group mb-3">
-  <input type="password" class="form-control" placeholder="Password">
+  <input type="password" class="form-control" placeholder="Password" name="password">
   <div class="input-group-append">
   <div class="input-group-text">
   <span class="fas fa-lock"></span>
@@ -36,7 +36,7 @@
   </div>
   </div>
   <div class="input-group mb-3">
-  <input type="password" class="form-control" placeholder="Retype password">
+  <input type="password" class="form-control" placeholder="Retype password" name="retype_password">
   <div class="input-group-append">
   <div class="input-group-text">
   <span class="fas fa-lock"></span>
@@ -56,7 +56,7 @@
     <div class="input-group-prepend">
     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
     </div>
-    <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric">
+    <input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" name="date">
     </div>
     
     </div>
@@ -70,13 +70,13 @@
     <div class="input-group-prepend">
     <span class="input-group-text"><i class="fas fa-phone"></i></span>
     </div>
-    <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text">
+    <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text" name="mru_phone_number">
     </div>
     
     </div>
    <div class="form-group">
     <label>Sex</label>
-    <select class="form-control">
+    <select class="form-control" name="sex">
     <option>Male</option>
     <option>Female</option>
     </select>
@@ -95,7 +95,7 @@
   <div class="card-footer">
     <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-  <a href="login.html" class="text-center">I already have a membership</a>
+  <a href="{% url 'login' %}" class="text-center">I already have a membership</a>
   </div>
   
   </div>

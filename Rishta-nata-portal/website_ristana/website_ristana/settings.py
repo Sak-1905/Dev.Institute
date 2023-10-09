@@ -28,9 +28,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'login'
-LOGIN_URL = 'login'
+AUTH_USER_MODEL = 'ristana.CustomUser'
+
+
+LOGIN_URL = 'login'  # URL name of your login view
+LOGIN_REDIRECT_URL = 'home'  # URL name to redirect to after successful login
 
 
 
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
