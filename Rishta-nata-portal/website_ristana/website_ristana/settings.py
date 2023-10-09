@@ -28,11 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'ristana.CustomUser'
+# AUTH_USER_MODEL = 'ristana.CustomUser'
 
 
-LOGIN_URL = 'login'  # URL name of your login view
-LOGIN_REDIRECT_URL = 'home'  # URL name to redirect to after successful login
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'login'
+LOGIN_URL = 'login'
 
 
 
