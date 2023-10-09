@@ -100,15 +100,13 @@
   
   </div>
   </div>
-  
-  
-  <script src="../../plugins/jquery/jquery.min.js"></script>
-  
-  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="../../dist/js/adminlte.min.js?v=3.2.0"></script>
-  
-  
+  <style>
+    .card-body {
+      margin: auto;
+            width: 50%;
+            padding: 10px;
+    }
+  </style>  
   </body>
     <form method="post" action="{% url 'signup' %}">
         {% csrf_token %}

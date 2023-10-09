@@ -3,37 +3,14 @@
 
 
 {% block content %}
-<body class="dark_bg" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="80" data-scroll-animation="true" style="overflow: visible;">
-       
-    <div id="preloader" style="display: none;">
-        <div id="preloader_spinner" style="display: none;">
-            <div class="spinner"></div>
-        </div>
-    </div>
+<body>
    
     <!--================ Frist hader Area =================-->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="../site/index.html">Home </a></li>
-                        <li class="active"><a href="../register/start">Register Online </a></li>
-                        <li class="active"><a href="../login">User Login </a></li>
-                        <!--li class="active"><a href="index.html">Downloads </a></li>
-                        <li class="active"><a href="index.html">Contact Us </a></li-->
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-        </div>
-    </header>
-    <!--================End Footer Area =================-->
-    
     <!--================Total container Area =================-->
 
     <div class="container main_container">
         <div class="content_inner_bg row m0">
-            <div style="height: 5px; background-color: white;">&nbsp;</div>
+            <div style="height: 5px; background-color: rgb(90, 28, 28);">&nbsp;</div>
             <section class="about_person_area pad" id="about">
 
 <div class="row">
@@ -80,25 +57,12 @@
     </h1>
     </div>
 </div>
-</section></div>
+</section>
 
 
 </div>
-
+</body>
 <!--================End Total container Area =================-->
 
-<script type="text/javascript">
-
-$( function() {
-$( ".datepicker" ).datepicker(
-        {
-            dateFormat: "yy-mm-dd",
-            changeMonth: true,
-            changeYear: true,
-            yearRange: "-100:+0",
-        });
-} );        
-</script>
-</body>
     <!-- Add more content as needed -->
 {% endblock content %}
