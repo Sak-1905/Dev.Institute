@@ -3,24 +3,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Other head elements -->
+    <header class="header_area stricky-fixed fadeInDown animated">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="https://png.pngtree.com/png-vector/20230321/ourmid/pngtree-ramadan-mosque-circle-design-vector-png-image_6657579.png" style="height: 80px;" alt="">
+                </div>
+ <!-- Other head elements -->
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
     
     <!-- Bootstrap JS (optional, for certain components) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
     
     <!-- Your custom styles or other CSS files -->
 </head>
-<body>
-    <!-- Navigation or header content -->
+
+<body class="dark_bg" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="80" data-scroll-animation="true" style="overflow: visible;">
+       
+        <div id="preloader" style="display: none;">
+            <div id="preloader_spinner" style="display: none;">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    
+        
+        <!--================Total container Area =================-->
+
+        
+<script type="text/javascript">
+
+$( function() {
+    $( ".datepicker" ).datepicker(
+            {
+                dateFormat: "yy-mm-dd",
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-100:+0",
+            });
+    } );        
+</script>
+
+
+</body>
+<section class="theme_selection">
+    <a class="default" href="#" onclick="return setActiveStyleSheet(&quot;default&quot;),!1" title="default">&nbsp;</a>
+    <a class="orange" href="#" onclick="return setActiveStyleSheet(&quot;orange&quot;),!1" title="orange">&nbsp;</a>
+    <a class="pink" href="#" onclick="return setActiveStyleSheet(&quot;pink&quot;),!1" title="pink">&nbsp;</a>
+    <a class="violet" href="#" onclick="return setActiveStyleSheet(&quot;violet&quot;),!1" title="violet">&nbsp;</a>
+    <a class="blue" href="#" onclick="return setActiveStyleSheet(&quot;blue&quot;),!1" title="blue">&nbsp;</a>
+    <a class="yellow" href="#" onclick="return setActiveStyleSheet(&quot;yellow&quot;),!1" title="yellow">&nbsp;</a>
+    
+</section>
+<div>&nbsp;</div>
+     <!-- Navigation or header content -->
     
     <div id="content">
         {% block content %}{% endblock %}
     </div>
     
-    <!-- Footer or other common content -->
-    <script src="{% static 'custom.js' %}"></script>
+    <!--================footer Area =================-->
+
+   
+<footer class="footer_area">
+    <div class="footer_inner">
+    <div class="container">
+    <img src="https://png.pngtree.com/png-vector/20230321/ourmid/pngtree-ramadan-mosque-circle-design-vector-png-image_6657579.png" style="height: 80px;" alt="">
+    </div>
+    <div style="color: #aaa">
+    <div>Department of Rishta Nata</div> 
+    <div>Ahmadiyya Muslim Jama'at, Canada</div>
+    <div>10610 Jane Street, Maple, ON L6A 3A2, Canada</div>
+    <div>Phone : 1 855-5RI-SHTA (574-7482) Email : <a href="mailto:support@rishtanata.ca">support@rishtanata.ca</a></div>
+    </div>                
+    </div>
+    </footer>
+    <!--================End footer Area =================-->
+    
 </body>
 </html>

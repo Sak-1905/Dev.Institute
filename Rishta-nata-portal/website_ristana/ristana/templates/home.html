@@ -3,7 +3,102 @@
 
 
 {% block content %}
-    <h1>Home Page</h1>
-    <p>Welcome to the home page of your Django website.</p>
+<body class="dark_bg" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="80" data-scroll-animation="true" style="overflow: visible;">
+       
+    <div id="preloader" style="display: none;">
+        <div id="preloader_spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+   
+    <!--================ Frist hader Area =================-->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../site/index.html">Home </a></li>
+                        <li class="active"><a href="../register/start">Register Online </a></li>
+                        <li class="active"><a href="../login">User Login </a></li>
+                        <!--li class="active"><a href="index.html">Downloads </a></li>
+                        <li class="active"><a href="index.html">Contact Us </a></li-->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </header>
+    <!--================End Footer Area =================-->
+    
+    <!--================Total container Area =================-->
+
+    <div class="container main_container">
+        <div class="content_inner_bg row m0">
+            <div style="height: 5px; background-color: white;">&nbsp;</div>
+            <section class="about_person_area pad" id="about">
+
+<div class="row">
+<div class="col-md-12">
+    <div style="text-align: center">
+        <img src="https://i.pinimg.com/564x/e6/2a/55/e62a55ab4895de97d5217073d890ba39.jpg" style="width: 180px;">
+    </div>
+    <div style="text-align: center">
+            In the Name of Allah, The Most Gracious, Ever Merciful
+    </div>
+    <div>&nbsp;</div>
+    <div style="text-align: center; font-size: 24px">
+            Rishta Nata Department of Ahmadiyya Muslim Jama'at Canada
+    </div>
+    <div>&nbsp;</div>
+
+    <p>
+            A community portal for Rishta Nata
+    </p>
+    <div>&nbsp;</div>
+
+    <p>        
+            This website is designed to facilitate the Rishta Nata department of Ahmadiyya Muslim Community. Though this website welcomes all members of Ahmadiyya Muslim Community around the globe, it still has a specific focus for serving Canadian members of the community among all of our users.
+    </p>
+    <div>&nbsp;</div>
+    <p>        
+                
+            If you do not belong to Ahmadiyya Muslim Community, please note that this is not a public website and has a specific target audience. This website only intends to serve members of Ahmadiyya Muslim Community for the specific cause of Rishta Nata. If you need any information about Ahmadiyya Muslim Community, you can visit our website at 
+            <a href="#">alislam.org</a>
+             or our Canadian local site at 
+             <a href="#">ahmadiyya.ca</a>
+    </p>
+    <div>&nbsp;</div>
+    <p>        
+                
+            Members of Ahmadiyya Muslim Community may submit their particulars/profile through this website which in turn will be used by the officials in Rishta Nata Department Canada to find a suitable match. If you want to submit your profile to the system please click here to Singup online.            
+    </p>
+    <br>
+    <br>
+    <h1 style="text-align: center">
+                    "The relationship between husband and wife should be as between two true and sincere friends."
+                    <br>
+                    (The Promised Messiah<sup>as</sup>)                
+    </h1>
+    </div>
+</div>
+</section></div>
+
+
+</div>
+
+<!--================End Total container Area =================-->
+
+<script type="text/javascript">
+
+$( function() {
+$( ".datepicker" ).datepicker(
+        {
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "-100:+0",
+        });
+} );        
+</script>
+</body>
     <!-- Add more content as needed -->
 {% endblock content %}
