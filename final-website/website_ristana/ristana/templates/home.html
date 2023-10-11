@@ -1,0 +1,138 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+
+{% block content %}
+<body>
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">In the Name of Allah,
+                <br>The Most Gracious, Ever Merciful <span class="home__title-color">Rishta Nata Department</span>
+                <br>Ahmadiyya Muslim<br>Jama'at<br>Mauritius</h1>
+
+            <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+            <a href="#" class="home__social-icon"><i class='bx bxl-youtube bx-tada bx-flip-horizontal' ></i>
+            <a href="#" class="home__social-icon"><i class='bx bxl-meta bx-tada bx-flip-horizontal' ></i>
+            <a href="#" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+            
+        </div>
+
+        <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png.png"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="static/img/about.jpg.JPG" alt="">
+            </div>
+            
+            <div>
+                <h2 class="about__subtitle">A community portal for Rishta Nata</h2>
+                <p class="about__text">This website is designed to facilitate the Rishta Nata department of Ahmadiyya Muslim Community. 
+                    Though this website welcomes all members of Ahmadiyya Muslim Community around the globe, 
+                    it still has a specific focus for serving Canadian members of the community among all of our users.
+                    <br>
+                    <br>
+                    
+
+                   </div>                                   
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Members of Ahmadiyya Muslim Community</h2>
+
+        <div class="skills__container bd-grid">          
+            <div>
+                <h2 class="skills__subtitle">Information About Ahmadiyya Muslim Community</h2>
+                <p class="skills__text">If you do not belong to Ahmadiyya Muslim Community, 
+                    please note that this is not a public website and has a specific target audience. 
+                    This website only intends to serve members of Ahmadiyya Muslim Community for the specific cause of Rishta Nata.</p>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bx-photo-album bx-tada bx-flip-horizontal' ></i>
+                        <span class="skills__name">Photo</span>
+                    </div>
+                    <div class="skills__bar skills__html">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">95%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-meta bx-tada bx-flip-horizontal' ></i>
+                        <span class="skills__name">Social Media</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">85%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-youtube bx-tada bx-flip-horizontal' ></i>
+                        <span class="skills__name">Youtube</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">65%</span>
+                    </div>
+                </div>
+               </div>
+            
+            <div>              
+                <img src="static/img/social.jpg" alt="" class="skills__img">
+            </div>
+        </div>
+    </section>
+
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Press</h2>
+
+        <div class="work__container bd-grid">
+            <a href="" class="work__img">
+                <img src="static/img/photo1.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="static/img/photo2.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="static/img/photo3.jpg" alt="">
+            </a>
+            </a>
+        </div>
+    </section>
+
+
+
+
+</body>
+<!--================End Total container Area =================-->
+
+    <!-- Add more content as needed -->
+{% endblock content %}
