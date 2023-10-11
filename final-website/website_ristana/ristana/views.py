@@ -9,10 +9,12 @@ class RegisterView(CreateView):
     form_class = UserCreationForm
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('login')
+    
 
 class CustomLoginView(LoginView):  # Use Django's built-in LoginView
     template_name = 'registration/login.html'
     success_url = reverse_lazy('home')
+    
 
 def HomeView(request):
     # home page
@@ -20,3 +22,4 @@ def HomeView(request):
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
+
